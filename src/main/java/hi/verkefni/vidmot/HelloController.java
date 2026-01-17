@@ -1,7 +1,16 @@
 package hi.verkefni.vidmot;
 
-public class HelloController {
-    public static void main(String[] args) {
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 
+public class HelloController {
+
+    @FXML
+    private Label greetingLabel;
+
+    @FXML
+    protected void sayHello() {
+        greetingLabel.setText("Halló nemandi!");
     }
 }
+
